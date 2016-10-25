@@ -116,18 +116,35 @@ section.video_ipad
   .video
     padding: 0 0 50px 0
     .ipad
-      background: url('../img/iPad_Air copy.png') no-repeat center
-      background-size: cover
+      border: 0
+      position: relative
       overflow-x: hidden
-      max-width: 55vw
+      overflow-y: hidden
+      max-width: 60vw
       height: auto
       margin-left: 5vw
       margin-right: 5vw
+    //
+    .img-ipad-one
+      position: relative
+      width: 100%
+      height: auto
+      z-index: 3
+      top: 0
+      left: 0
+    .img-ipad-two
+      position: absolute
+      top: 5%
+      left: 5%
+      z-index: 1
+      max-width: 90%
+      height: 90%
+    //
+
     .ipad:focus
         outline: none
         outline-offset: -2px
     .ipad-img
-      opacity: 0.3
       width: 50%
       height: 50%
       overflow-x: hidden
