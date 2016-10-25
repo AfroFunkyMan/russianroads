@@ -7,6 +7,28 @@ $(window).resize(function () {
 	heightDetect();
 });
 
+$('img[data-target=image]').click(function () {
+	$('iframe#video-frame').remove();
+	$('img[data-target=video]').parent().append('<img src="img/bg.jpg" data-target="video-image-toggle" class="img-ipad-two">');
+	console.log('hide');
+});
+var videoTrigger = false;
+$('img[data-target=video]').click(function () {
+	if ($('.video').slick('slickCurrentSlide') === 1 && $('iframe#video-frame').length === 0){
+		var width = $('img[data-target=video]').width();
+		var height = $('img[data-target=video]').height();
+		$('img[data-target=video-image-toggle]').remove();
+		$('img[data-target=video]').parent().append('<iframe ' +
+			'id="video-frame"' +
+			'width="'+width+'" ' +
+			'height="'+height+'" ' +
+			'src="https://www.youtube.com/embed/MHSOyfQvOAU" ' +
+			'frameborder="0" ' +
+			'autoplay="1"' +
+			'allowfullscreen></iframe>')
+	}
+	console.log('show');
+});
 screenarr = ["start","company","team_company","video_ipad","contacts","partners"];
 $("#btn-one").click(function(e){
 	console.log("lol");
