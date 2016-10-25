@@ -1,0 +1,207 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Заголовок
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon', href='favicon.png')
+    link(rel='stylesheet', href='libs/bootstrap/bootstrap-grid.min.css')
+    link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.min.css')
+    // <link rel="stylesheet" href="libs/linea/styles.css" />
+    // <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+    // <link rel="stylesheet" href="libs/animate/animate.min.css" />
+    link(rel='stylesheet', href='css/owl.css')
+    // <link rel="stylesheet" href="css/onepage-scroll.css">
+    link(rel='stylesheet', href='fonts/fonts.css')
+    // <link rel="stylesheet" href="fonts/museosanscyrl.css" />
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/maestro.css')
+    link(rel='stylesheet', href='css/primary.css')
+    // <link rel="stylesheet" href="css/skins/purple.css" />
+    link(rel='stylesheet', href='css/media.css')
+    link(rel="stylesheet", type="text/css", href="libs/slick/slick.css")
+    // Add the new slick-theme.css if you want the default styling
+    link(rel="stylesheet", type="text/css", href="libs/slick/slick-theme.css")
+  body
+    .loader
+      .loader_inner
+    header#maestro.main_head.main_color_bg.start
+      div.parallax-container
+        img.parallax-layer-bg.hidden-phone.hidden-xs.hidden-sm.hidden-tablet(src="img/bg.jpg")
+        img.pin1.hidden-phone.hidden-xs.hidden-sm.hidden-tablet(src="img/marker_3.png")
+        img.pin2.hidden-phone.hidden-xs.hidden-sm.hidden-tablet(src="img/marker_2.png")
+        img.pin3.hidden-phone.hidden-xs.hidden-sm.hidden-tablet(src="img/marker_1.png")
+        img.parallax-off-layer.hidden-desktop.hidden-lg.hidden-md(src="img/bg.jpg")
+      .h-layer
+      .container.head_centr
+        .head_top-main
+          img.sunrise(src='img/sun.png')
+          h3.h3-do Дороги Отечества
+          p.p-do.hidden-sm.hidden-xs
+            | АО Дороги Отечества- креативный продюсерский
+            br
+            | центр,
+            | 				осуществляющий масштабные культурно-просветительские
+            br
+            | проекты в
+            | 				сфере ИТ, кинематографии и книгоиздания.
+      #btn-one.btn-wrap
+        img.btn-rcenter(src='img/down-arrow.svg', alt='')
+    section.company
+      a#company(href='#company', name='company')
+      .company_text
+        h2.h2-comp Компания
+        p.p-comp
+          | По сути, эта война продолжалась до 1612 года, когда Волоколамск
+          | был атакован Сигизмундом III Ваза. Тогда усилие короля Польского и
+          | великого князя литовского ничем не закончилось, окончательно
+          | похоронив затею западных соседей взять под контроль Волок как
+          | ключевой объект, стоящий на пересечении торговых путей в Россию и
+          | из нее.
+      ul.company_img
+        li
+          img(src='img/cmp_img_1.png')
+        li
+          img(src='img/cmp_img_2.png')
+        li
+          img(src='img/cmp_img_3.png')
+      .directors
+        a#soviet(href='#') Совет директоров
+      #btn-two.btn-wrap
+        img.btn-rcenter.btn-tt(src='img/down-arrow.svg', alt='')
+    section.team_company
+      h2 Компания
+      .director_team
+        .img_team
+        h4 Никита Михалков
+        span Председатель правления, президент РФК
+      .all_team.clearfix
+        .team
+          .img_team
+          h4 Тихон Шевкунов
+          span Епископ
+        .team
+          .img_team
+          h4 Альберт Баков
+          span Генеральный директорФК РФ
+        .team
+          .img_team
+          h4 Андрей Кричевский
+          span Член правления
+        .team
+          .img_team
+          h4 Валерия Панкратова
+          span Ревизор
+        .team
+          .img_team
+          h4 Аркадий Левин
+          span Генеральный директор
+        .team
+          .img_team
+          h4 Ирма Комладзе
+          span Креативный директор
+        .team
+          .img_team
+          h4 Вадим Инин
+          span Кммерческий директор
+        .team
+          .img_team
+          h4 Александр Агейкин
+          span Протеирей
+      .about_company.kel-block
+        a(href='') О компании
+      #btn-free.btn-wrap.btn-team
+        img.btn-rcenter.bb-rtm(src='img/down-arrow.svg', alt='')
+    section.video_ipad
+      .video_ipad_title
+        span Проект
+        h2.h2-video Дороги России
+      .video
+        .ipad_left.ipad
+          img.img-ipad(src='img/bg.jpg')
+        .ipad_center.ipad
+          img.img-ipad(src='img/bg.jpg')
+        .ipad_right.ipad
+          img.img-ipad(src='img/bg.jpg')
+      p
+        | По сути, эта война продолжалась до 1612 года, когда Волоколамск был атакован Сигизмундом III Ваза. Тогда усилие короля Польского и великого князя литовского ничем не закончилось, окончательно похоронив затею западных соседей взять под контроль Волок как ключевой объект, стоящий на пересечении торговых путей в Россию и из нее.
+      a.first_link(href='#') rusroads.com
+    section.contacts
+      h2 Контакты
+      .adress
+        .offline_adres
+          p АО “Дороги Отечества
+          p 119019, Москва, ул Моховая, 10 стр 2
+        .rect
+        .online_adres
+          p +7 (495) 640 79 33
+          p info@homelandroads.com
+    section.partners
+      h2 Партнеры
+      ul.img_partners
+        li
+          a(href='#')
+            img(src='img/prt_1.png')
+        li
+          a(href='#')
+            img(src='img/prt_2.png')
+        li
+          a(href='#')
+            img(src='img/prt_3.png')
+        li
+          a(href='#')
+            img(src='img/prt_4.png')
+        li
+          a(href='#')
+            img(src='img/prt_5.png')
+        li
+          a(href='#')
+            img(src='img/prt_6.png')
+        li
+          a(href='#')
+            img(src='img/prt_7.png')
+      h5 Дороги Отечества © 2016. Все права защищены
+    //
+      <footer class="main_footer bg_dark">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+      &copy; 2015 Александр Прокопский
+      <div class="social_wrap">
+      <ul>
+      <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </footer>
+    .hidden
+    //if lt IE 9
+      script(src='libs/html5shiv/es5-shim.min.js')
+      script(src='libs/html5shiv/html5shiv.min.js')
+      script(src='libs/html5shiv/html5shiv-printshiv.min.js')
+      script(src='libs/respond/respond.min.js')
+    script(src='libs/jquery/jquery-2.1.3.min.js')
+    script(type="text/javascript", src="libs/slick/slick.min.js")
+    script(src="libs/parallax/jquery.event.frame.js")
+    script(src="libs/parallax/jquery.parallax_1.0.js")
+    script(src="libs/parallax/jquery.parallax.min.js")
+    // <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    // <script src="libs/mixitup/mixitup.min.js"></script>
+    script(src="libs/scroll2id/PageScroll2id.min.js")
+    // <script src="libs/waypoints/waypoints.min.js"></script>
+    // <script src="libs/animate/animate-css.js"></script>
+    // <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+    // <script src="js/jquery.onepage-scroll.js"></script>
+
+    script(src='js/common.js')
+    // Yandex.Metrika counter
+    // /Yandex.Metrika counter
+    // Google Analytics counter
+    // /Google Analytics counter
+    script(src="js/script.js")
